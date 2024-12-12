@@ -60,6 +60,9 @@ body{
     align-items: center;  
     
 }
+.navbar__s4{
+    display:none;
+}
 
 /* My learning Ppopup*/
 
@@ -142,7 +145,6 @@ display:none;
         transform: scale(1);
         opacity:1;
 
-
     }
     
 }
@@ -161,6 +163,7 @@ h3:hover{
     background-color:seagreen;
 }
 .Course-Card{
+    flex-grow:1;
     width:250px;
     margin: 5px;
     flex-basis:20%;
@@ -225,6 +228,31 @@ margin: 10px;
 .Footer__two h1{
     
     color: #A435f0;
+   
+}
 
+/* Media Queries */
+
+@media screen and (max-width:800px) {
+    body{
+        font-size: 10px;
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    .course-card{
+        flex-basis:40%;
+    }
+    .Categories{
+        display: none;
+    }
+    .navbar__s2.navbar__s3{
+        display:none;
+
+    }
+    .navbar__s4{
+        display:block;
+    }
     
 }
